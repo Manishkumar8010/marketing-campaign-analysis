@@ -1,0 +1,31 @@
+create database Marketing_Performance;
+CREATE TABLE campaign_performance(
+performance_id int primary key,
+campaign_id int,
+region varchar(20),
+date DATE,
+impressions INT,
+clicks INT,
+conversions int,
+cost float,
+revenue float);
+
+
+SELECT* FROM marketing_performance.campaign_performance_table;
+
+use marketing_performance;
+ drop table campaign_table;
+
+create table campaign_table(
+campaign_id int,
+campaign_name varchar(50),
+channel_id int);
+
+select * from campaign_table;
+
+USE Marketing_Performance;
+
+CREATE table channels_table(
+channel_id int,
+channel_name varchar(50)
+);
